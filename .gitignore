@@ -38,6 +38,7 @@ jspm_packages
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+/db/*.sqlite3-*
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -47,3 +48,20 @@ jspm_packages
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 .env
+
+# Rails 7.1 specific
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/.keep
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
